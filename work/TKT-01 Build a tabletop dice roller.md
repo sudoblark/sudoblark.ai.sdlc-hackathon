@@ -1,0 +1,25 @@
+---
+status: backlog
+---
+## Description
+
+A command-line dice roller for tabletop games. It takes standard dice notation, rolls it, and shows the working, so a player can see why they rolled 14 and not just that they did. It covers plain rolls such as `3d6`, modifiers such as `1d20+5`, and keeping the best or worst dice, such as `4d6kh3` for character stats or `2d20kh1` for advantage. Rolls can be seeded, so the same seed always gives the same result, which is what makes a dice roller testable.
+
+## Agent instructions
+
+1. Ask the person which language, test runner and linter to use, and what to call the project's folder. Wait for their answers.
+2. Propose a commit plan as rows in the table below, in landing order. The first commit sets up the folder with its test runner and linter, and each later commit adds one behaviour with its tests. Wait for the person's sign-off, then propose `docs(work): plan TKT-01 (TKT-01)` for them to commit.
+3. Work the plan one row at a time.
+
+## Commit plan
+
+| # | Commit message | What it covers | Status |
+| --- | --- | --- | --- |
+
+## Acceptance criteria
+
+- [ ] The person signed off the language, the tooling and the folder name
+- [ ] The person signed off the commit plan
+- [ ] `3d6`, `1d20+5` and `4d6kh3` each show every die rolled, which ones count, and the total
+- [ ] The same seed always gives the same rolls
+- [ ] Notation it can't read gets a clear error, not a crash
