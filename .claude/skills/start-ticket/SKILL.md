@@ -20,7 +20,8 @@ The ticket is the file in `work/` whose name starts with this number. If no numb
 7. **When the person says it has landed, set that row's Status to ✅,** then start the next row. The person commits the ✅ with the next planned commit. Only their word earns it, because it's how a fresh session knows where to pick up.
 8. **Never grow the current commit.** Work that turns up and belongs to this ticket becomes a new row in the plan, with the reason it's needed. Work that doesn't belong goes in a new ticket, through the `log-ticket` skill. Either way, the plan changes before the work does.
 9. **Ticket edits outside a planned commit are their own commit,** such as a plan change or a new ticket. Propose a `docs(work): <what changed> (TKT-NN)` message for each one straight away.
-10. **When every row is ✅,** tick the acceptance criteria you've seen met, set `status: done`, and draft the pull request at the end of the ticket in the shape below. Propose `docs(work): close TKT-NN (TKT-NN)` for the person to commit, and stop.
+10. **When every commit row is ✅, work through the post-commit testing, one check at a time.** Run what you can and show the output, and walk the person through anything they need to try by hand. Set a check's Status to ✅ only when the person confirms it passed. A failure becomes a new row in the commit plan that names its cause, and testing resumes once that commit has landed.
+11. **When every commit and check is ✅,** tick the acceptance criteria you've seen met, set `status: done`, and draft the pull request at the end of the ticket in the shape below. Propose `docs(work): close TKT-NN (TKT-NN)` for the person to commit, with the testing ✅ marks, and stop.
 
 ## Pull request shape
 

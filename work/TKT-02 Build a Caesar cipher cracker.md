@@ -9,12 +9,17 @@ A Caesar cipher tool that also breaks the cipher. It encrypts and decrypts a mes
 
 1. Find a published table of English letter frequencies, and record the source in this ticket. Show it to the person before planning.
 2. Ask the person which language, test runner and linter to use, and what to call the project's folder. Wait for their answers.
-3. Propose a commit plan as rows in the table below, in landing order. The first commit sets up the folder with its test runner and linter, and each later commit adds one behaviour with its tests. Wait for the person's sign-off, then propose `docs(work): plan TKT-02 (TKT-02)` for them to commit.
+3. Propose a commit plan, and the post-commit tests that prove the finished project works, as rows in the tables below. Commits go in landing order. The first commit sets up the folder with its test runner and linter, and each later commit adds one behaviour with its tests. Wait for the person's sign-off, then propose `docs(work): plan TKT-02 (TKT-02)` for them to commit.
 4. Work the plan one row at a time.
 
 ## Commit plan
 
 | # | Commit message | What it covers | Status |
+| --- | --- | --- | --- |
+
+## Post-commit testing
+
+| # | Check | How | Status |
 | --- | --- | --- | --- |
 
 ## Acceptance criteria

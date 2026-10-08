@@ -8,12 +8,17 @@ A command-line dice roller for tabletop games. It takes standard dice notation, 
 ## Agent instructions
 
 1. Ask the person which language, test runner and linter to use, and what to call the project's folder. Wait for their answers.
-2. Propose a commit plan as rows in the table below, in landing order. The first commit sets up the folder with its test runner and linter, and each later commit adds one behaviour with its tests. Wait for the person's sign-off, then propose `docs(work): plan TKT-01 (TKT-01)` for them to commit.
+2. Propose a commit plan, and the post-commit tests that prove the finished project works, as rows in the tables below. Commits go in landing order. The first commit sets up the folder with its test runner and linter, and each later commit adds one behaviour with its tests. Wait for the person's sign-off, then propose `docs(work): plan TKT-01 (TKT-01)` for them to commit.
 3. Work the plan one row at a time.
 
 ## Commit plan
 
 | # | Commit message | What it covers | Status |
+| --- | --- | --- | --- |
+
+## Post-commit testing
+
+| # | Check | How | Status |
 | --- | --- | --- | --- |
 
 ## Acceptance criteria
