@@ -30,3 +30,11 @@ A turn-based trading game in the terminal, in the spirit of the classic space tr
 - [ ] The game ends after a fixed number of turns and shows the final credits
 - [ ] The same seed replays the same prices
 - [ ] A trade that isn't possible gets a clear reply, not a crash
+
+## Stretch goals
+
+Once every acceptance criterion is met, a team with time to spare can add these to the plan as new commits:
+
+- Random events between planets, such as pirates or a market crash, from the same seed
+- Ship upgrades, such as a bigger hold or faster engines, bought with credits
+- A high-score table kept between games

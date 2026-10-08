@@ -31,3 +31,11 @@ A Caesar cipher tool that also breaks the cipher. It encrypts and decrypts a mes
 - [ ] Case, spaces and punctuation come through unchanged
 - [ ] ROT13 applied twice gives the message back
 - [ ] Given a sentence or two of ciphertext, the cracker finds the shift and shows the message, with the next best guesses and their scores
+
+## Stretch goals
+
+Once every acceptance criterion is met, a team with time to spare can add these to the plan as new commits:
+
+- The Vigenère cipher, where a keyword sets a different shift for each letter
+- Cracking Vigenère: find the key length, then crack each letter of the key as its own Caesar shift
+- Encrypting, decrypting and cracking whole text files

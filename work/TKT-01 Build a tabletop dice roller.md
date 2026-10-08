@@ -28,3 +28,11 @@ A command-line dice roller for tabletop games. It takes standard dice notation, 
 - [ ] `3d6`, `1d20+5` and `4d6kh3` each show every die rolled, which ones count, and the total
 - [ ] The same seed always gives the same rolls
 - [ ] Notation it can't read gets a clear error, not a crash
+
+## Stretch goals
+
+Once every acceptance criterion is met, a team with time to spare can add these to the plan as new commits:
+
+- Exploding dice, such as `3d6!`, where a die that rolls its maximum adds another die
+- Several groups in one roll, such as `2d6+1d8+3`
+- The minimum, maximum and average of a roll, and a chart of how likely each total is, without rolling it

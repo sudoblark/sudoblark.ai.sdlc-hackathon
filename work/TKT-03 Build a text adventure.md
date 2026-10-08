@@ -30,3 +30,11 @@ A small text adventure in the style of the classic interactive fiction games: ab
 - [ ] The door opens only with its key, and reaching the last room wins the game
 - [ ] The game logic is tested without typing into the terminal
 - [ ] A command it doesn't understand gets a helpful reply, not a crash
+
+## Stretch goals
+
+Once every acceptance criterion is met, a team with time to spare can add these to the plan as new commits:
+
+- Saving and loading a game
+- Characters to talk to, with simple dialogue loaded from the data file
+- Puzzles that need two items combined

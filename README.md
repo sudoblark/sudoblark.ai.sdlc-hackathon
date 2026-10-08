@@ -25,7 +25,7 @@ In Claude Code, run `/start-ticket TKT-01` to work a starter ticket, or describe
 | `.claude/skills/log-ticket/` | Used to log tickets in a standardised format. |
 | `.claude/skills/start-ticket/` | Used to work on an already logged ticket, one atomic commit at a time. |
 | `.claude/settings.json` | Claude Code's permission rules. |
-| `work/` | Tickets, one file each, including four starter projects. Used for convenience, but in the actual workplace you'll probably use an external ticketing system. |
+| `work/` | Tickets, one file each, including five starter projects. Used for convenience, but in the actual workplace you'll probably use an external ticketing system. |
 
 ## The expected workflow
 
@@ -51,6 +51,7 @@ Commit messages follow [Conventional Commits](https://www.conventionalcommits.or
 | [TKT-02](work/TKT-02%20Build%20a%20Caesar%20cipher%20cracker.md) | Build a Caesar cipher cracker |
 | [TKT-03](work/TKT-03%20Build%20a%20text%20adventure.md) | Build a text adventure |
 | [TKT-04](work/TKT-04%20Build%20a%20space%20trading%20game.md) | Build a space trading game |
+| [TKT-05](work/TKT-05%20Build%20an%20ASCII%20dungeon%20explorer.md) | Build an ASCII dungeon explorer |
 
 These are just some fun ideas to get you started. Populating them as detailed tickets is the first task of the hackathon; that, or logging a ticket with your own fun idea to work on!
 
