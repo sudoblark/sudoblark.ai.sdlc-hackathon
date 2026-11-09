@@ -1,18 +1,10 @@
 # sudoblark.ai.sdlc-hackathon
 
-This repository is the starter code for the LLMs in the SDLC hackathon run by Sudoblark. As such, it's intended to be utilised alongside the [LLMs in the SDLC](https://sudoblark.com/whitepapers/llms-in-the-sdlc) guide. That guide covers the workflow we're trying to emulate, as well as setup instructions.
+This is the starter repository for the LLMs in the SDLC hackathon run by Sudoblark. As such, it's intended to be used alongside the [LLMs in the SDLC](https://sudoblark.com/talks/llms-in-the-sdlc/) guide. That guide covers the workflow I'm trying to emulate, as well as setup instructions.
 
 ## Quick start
 
-Install the prerequisites from the guide, create an empty repository in your own GitHub account, then:
-
-```bash
-git clone https://github.com/sudoblark/sudoblark.ai.sdlc-hackathon.git
-cd sudoblark.ai.sdlc-hackathon
-git remote set-url origin https://github.com/<your-username>/<your-repository>.git
-git push -u origin main
-claude
-```
+Follow the guide's [setup steps](https://sudoblark.com/talks/llms-in-the-sdlc/#setup) to install the prerequisites and push your own copy of this repository.
 
 In Claude Code, run `/start-ticket TKT-01` to work a starter ticket, or describe your own idea and ask the agent to log it as a ticket.
 
@@ -29,19 +21,10 @@ In Claude Code, run `/start-ticket TKT-01` to work a starter ticket, or describe
 
 ## The expected workflow
 
-1. Use `/log-ticket` in a fresh agent conversation to describe an idea, refine it with an agent, then log it as a ticket under the `work/` folder. 
-2. Use `/start-ticket` in a fresh agent conversation to work through the ticket, one commit at a time.
-   1. The agent should work one atomic commit at a time. Building out a row of the plan, running checks, then proposing a commit message. It'll then wait for you to review the code, commit it or push back.
-   1. Once you're happy with the commit, and have informed the agent the commit has been committed, it'll move on to the next commit in the plan.
-   1. Once all commits are done in the plan, the agent will move on to any identified post-commit testing before asking you to close the ticket.
+1. Use `/log-ticket` in a fresh agent conversation to describe an idea, refine it with an agent, then log it as a ticket under the `work/` folder.
+2. Use `/start-ticket` in a fresh agent conversation to work through the ticket. The agent builds one commit at a time, proposes its message, and waits for you to review it, then commit it or push back. Tell it once you've committed, and it moves on to the next. When every commit has landed, it walks you through testing the result, then asks you to close the ticket.
 
-
-To avoid scope creep, any new work found along the way either:
-
-1. Becomes a new row in the commit plan if it's small enough, and you approve the change in the commit plan.
-2. Becomes a new ticket, as you have deemed the scope creep too great for it to be actioned in the current ticket.
-
-Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with the ticket number at the end, as `AGENTS.md` describes.
+The rules the agent follows along the way, such as what happens to new work it finds and how commit messages are written, are in [`AGENTS.md`](AGENTS.md).
 
 ## Starter tickets
 
@@ -54,6 +37,8 @@ Commit messages follow [Conventional Commits](https://www.conventionalcommits.or
 | [TKT-05](work/TKT-05%20Build%20an%20ASCII%20dungeon%20explorer.md) | Build an ASCII dungeon explorer |
 
 These are just some fun ideas to get you started. Populating them as detailed tickets is the first task of the hackathon; that, or logging a ticket with your own fun idea to work on!
+
+To see one finished, I built TKT-05 from this repository with the same workflow: [sudoblark.ai.sdlc-hackathon-dungeon-explorer](https://github.com/sudoblark/sudoblark.ai.sdlc-hackathon-dungeon-explorer).
 
 ## Using a different agent
 

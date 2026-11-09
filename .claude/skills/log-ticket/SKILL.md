@@ -16,7 +16,7 @@ Turn the person's request into a ticket file in `work/`, for them to review and 
 5. **Plan the commits.** Each commit is one small change that works on its own and can be reviewed in a few minutes, listed in the order they land. For a new project, the first commit sets up the skeleton and its checks, such as a test runner and a linter, so every later commit has checks to run. Then plan the post-commit tests: end-to-end checks that prove the finished work does what the ticket says, such as running the program and trying each feature.
 6. **Write** `work/TKT-NN <title>.md` in the shape below, creating `work/` if it doesn't exist.
 7. **Propose its commit message,** `docs(work): add TKT-NN <short summary> (TKT-NN)`, and stop. A new ticket is always its own commit.
-8. **Iterate until the person is happy.** If you have concerns about the plan, say so; don't just agree. They commit the ticket themselves.
+8. **Iterate until the person is happy,** as `AGENTS.md` describes. They commit the ticket themselves.
 
 ## Ticket shape
 
