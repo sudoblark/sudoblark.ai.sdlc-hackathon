@@ -4,15 +4,7 @@ This repository is the starter code for the LLMs in the SDLC hackathon run by Su
 
 ## Quick start
 
-Install the prerequisites from the guide, create an empty repository in your own GitHub account, then:
-
-```bash
-git clone https://github.com/sudoblark/sudoblark.ai.sdlc-hackathon.git
-cd sudoblark.ai.sdlc-hackathon
-git remote set-url origin https://github.com/<your-username>/<your-repository>.git
-git push -u origin main
-claude
-```
+Follow the guide's [setup steps](https://sudoblark.com/talks/llms-in-the-sdlc/#setup) to install the prerequisites and push your own copy of this repository.
 
 In Claude Code, run `/start-ticket TKT-01` to work a starter ticket, or describe your own idea and ask the agent to log it as a ticket.
 
