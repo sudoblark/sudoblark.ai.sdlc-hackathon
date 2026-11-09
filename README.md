@@ -38,6 +38,8 @@ The rules the agent follows along the way, such as what happens to new work it f
 
 These are just some fun ideas to get you started. Populating them as detailed tickets is the first task of the hackathon; that, or logging a ticket with your own fun idea to work on!
 
+To see one finished, I built TKT-05 from this repository with the same workflow: [sudoblark.ai.sdlc-hackathon-dungeon-explorer](https://github.com/sudoblark/sudoblark.ai.sdlc-hackathon-dungeon-explorer).
+
 ## Using a different agent
 
 Agents that read `AGENTS.md`, such as GitHub Copilot, follow the repository's rules, but the skills and permission settings are written for Claude Code. You can still follow the workflow by asking your agent to read `.claude/skills/start-ticket/SKILL.md` and work through it.
