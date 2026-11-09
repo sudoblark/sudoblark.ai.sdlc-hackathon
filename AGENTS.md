@@ -12,7 +12,9 @@ Rules for any AI agent working in this repo. A person drives the agent. The agen
 ## Working from tickets
 
 - **All work starts from a ticket in `work/`, with one session per ticket.** The `log-ticket` skill writes a ticket, and the person runs `start-ticket` with its number to work it.
-- **One commit at a time, from the ticket's plan.** Build one commit's scope, run the checks, propose the message, and wait until the person says it has landed. Work found on the way becomes a new commit in the plan, or a new ticket, never a bigger commit.
+- **One commit at a time, from the ticket's plan.** Build one commit's scope, run the checks and show the results, propose the message, and wait until the person says it has landed.
+- **Never grow the current commit.** Work that turns up and belongs to the ticket becomes a new row in its plan, with the reason it's needed. Work that doesn't belong becomes a new ticket. Either way, the plan changes before the work does.
+- **Iterate until you're both happy.** If you have concerns about a commit or a plan, say so; don't just agree. The person decides what goes in each commit.
 - **The ticket is the record.** The plan, progress and decisions live in the ticket, not only in the chat, so someone who never saw the conversation, or a fresh session, can pick the work up. Write each decision and its reason into the ticket when it's made.
 
 ## Judgement
