@@ -12,7 +12,7 @@ Ticket: $ARGUMENTS
 The ticket is the file in `work/` whose name starts with this number. If no number was given, ask for one.
 
 1. **Read the ticket.** Check every ticket it depends on has `status: done`. If one doesn't, stop and say so.
-2. **Set its `status` to `in-progress`.** The person commits that with the first planned commit.
+2. **Set its `status` to `in-progress`,** if it isn't already. Unlike other ticket edits, this isn't its own commit: leave it in the working tree, and the person commits it along with the first planned commit.
 3. **Follow its agent instructions,** and stop at every sign-off point they name.
 4. **Work only the first row of the commit plan whose Status isn't ✅,** following the rules for working from tickets in `AGENTS.md`.
 5. **When the person says it has landed, set that row's Status to ✅,** then start the next row. The person commits the ✅ with the next planned commit. Only their word earns it, because it's how a fresh session knows where to pick up.
