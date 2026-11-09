@@ -21,19 +21,10 @@ In Claude Code, run `/start-ticket TKT-01` to work a starter ticket, or describe
 
 ## The expected workflow
 
-1. Use `/log-ticket` in a fresh agent conversation to describe an idea, refine it with an agent, then log it as a ticket under the `work/` folder. 
-2. Use `/start-ticket` in a fresh agent conversation to work through the ticket, one commit at a time.
-   1. The agent should work one atomic commit at a time. Building out a row of the plan, running checks, then proposing a commit message. It'll then wait for you to review the code, commit it or push back.
-   1. Once you're happy with the commit, and have informed the agent the commit has been committed, it'll move on to the next commit in the plan.
-   1. Once all commits are done in the plan, the agent will move on to any identified post-commit testing before asking you to close the ticket.
+1. Use `/log-ticket` in a fresh agent conversation to describe an idea, refine it with an agent, then log it as a ticket under the `work/` folder.
+2. Use `/start-ticket` in a fresh agent conversation to work through the ticket. The agent builds one commit at a time, proposes its message, and waits for you to review it, then commit it or push back. Tell it once you've committed, and it moves on to the next. When every commit has landed, it walks you through testing the result, then asks you to close the ticket.
 
-
-To avoid scope creep, any new work found along the way either:
-
-1. Becomes a new row in the commit plan if it's small enough, and you approve the change in the commit plan.
-2. Becomes a new ticket, as you have deemed the scope creep too great for it to be actioned in the current ticket.
-
-Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with the ticket number at the end, as `AGENTS.md` describes.
+The rules the agent follows along the way, such as what happens to new work it finds and how commit messages are written, are in [`AGENTS.md`](AGENTS.md).
 
 ## Starter tickets
 
