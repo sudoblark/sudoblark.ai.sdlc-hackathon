@@ -1,6 +1,6 @@
 # sudoblark.ai.sdlc-hackathon
 
-This repository is the starter code for the LLMs in the SDLC hackathon run by Sudoblark. As such, it's intended to be utilised alongside the [LLMs in the SDLC](https://sudoblark.com/talks/llms-in-the-sdlc/) guide. That guide covers the workflow we're trying to emulate, as well as setup instructions.
+This is the starter repository for the LLMs in the SDLC hackathon run by Sudoblark. As such, it's intended to be used alongside the [LLMs in the SDLC](https://sudoblark.com/talks/llms-in-the-sdlc/) guide. That guide covers the workflow I'm trying to emulate, as well as setup instructions.
 
 ## Quick start
 
